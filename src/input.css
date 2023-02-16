@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar-fixed{
+    @apply fixed z-[9999] bg-slate-100 lg:bg-white;
+}
+
+.hamburger-line{
+    @apply w-[18px] h-[2px] my-1 block bg-black;
+}
+
+.hamburger-active > span:nth-child(1){
+    @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2){
+    @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3){
+    @apply -rotate-45;
+}
+
+.changeText {
+    animation: fadeInOut 0.5s linear infinite;
+  }
+  
+  @keyframes fadeInOut {
+    50% {
+      opacity: 0;
+    }
+  }
